@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [formData, setFormData] = useState({ username: "", password: "" });
+  const [formData, setFormData] = useState({ userid: "", password: "" });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -82,7 +82,7 @@ export default function Home() {
               placeholder="아이디"
               value={formData.username}
               onChange={handleChange}
-              name="username"
+              name="userid"
               className="w-full text-gray-800 text-base rounded-xl bg-gray-100 p-3"
               required
             />
